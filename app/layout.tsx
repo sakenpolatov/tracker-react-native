@@ -1,18 +1,12 @@
 import React from "react";
 import { Stack } from "expo-router";
-import styled from "styled-components/native";
+import { StatusBar } from "expo-status-bar";
 
 export default function RootLayout() {
   return (
-    <Container>
-      <Stack>
-        <Stack.Screen options={{ headerShown: false }} />
-      </Stack>
-    </Container>
+    <>
+      <Stack screenOptions={{ headerShown: false }} />
+      <StatusBar style="auto" />
+    </>
   );
 }
-
-const Container = styled.View`
-  flex: 1;
-  background-color: #fff;
-`;
