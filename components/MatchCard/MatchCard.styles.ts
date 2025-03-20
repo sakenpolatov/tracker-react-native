@@ -12,7 +12,7 @@
     export const CardContainer = styled.View`
       width: 100%;
       background-color: #0B0E12;
-      margin-vertical: 8px;
+      margin-vertical: 12px;
       border-radius: 4px;
       overflow: hidden;
     `;
