@@ -1,7 +1,6 @@
 import React from "react";
-import styled from "styled-components/native";
-import { Header } from "../components/Header/Header";
-import { MatchList } from "../components/MatchList/MatchList"; 
+import { Container, Header, MatchList } from "../components";
+
 
 export default function Home() {
   return (
@@ -12,8 +11,4 @@ export default function Home() {
   );
 }
 
-const Container = styled.View`
-  flex: 1;
-  background-color: #06080c;
-  width: 100%;
-`;
+
