@@ -9,3 +9,4 @@ export * from './PlayerInfo/PlayerInfo';
 export * from './RefreshButton/RefreshButton';
 export * from './TeamStats/TeamStats';
 export * from './Title/Title';
+export * from './MatchStatus/MatchStatus';

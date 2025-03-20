@@ -12,8 +12,9 @@
       ScoreContainer,
       ScoreText,
       AnimatedDetails,
+			ScoreStatusContainer,
     } from "./MatchCard.styles";
-import { MatchDetails } from "..";
+import { MatchDetails ,MatchStatus } from "..";
 
     interface MatchCardProps {
       match: Match;
@@ -41,11 +42,14 @@ import { MatchDetails } from "..";
               <TeamName>{match.homeTeam.name}</TeamName>
             </TeamContainer>
 
-            <ScoreContainer>
-              <ScoreText>
-                {match.homeScore} : {match.awayScore}
-              </ScoreText>
-            </ScoreContainer>
+						<ScoreContainer>
+            <ScoreStatusContainer>
+                <ScoreText>
+                    {match.homeScore} : {match.awayScore}
+                </ScoreText>
+                <MatchStatus status={match.status} /> 
+            </ScoreStatusContainer>
+        </ScoreContainer>
 
             <TeamContainer>
               <TeamName>{match.awayTeam.name}</TeamName>
